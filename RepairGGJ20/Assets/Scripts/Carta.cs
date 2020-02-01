@@ -5,11 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Nueva Carta", menuName = "Cartas")]
 public class Carta : ScriptableObject
 {
-    public new string Name;
-    public string Description;
+    public new string nombre;
+    public string descripcion;
 
-    public Sprite Artwork;
-    public efecto Efecto;
+    public Sprite arte;
+    public efecto effecto;
+    public string accion;
 
     public enum efecto
     {
@@ -26,7 +27,7 @@ public class Carta : ScriptableObject
     // EFECTOS DE LA CARTA
     public efecto getEfectoCarta()
     {
-        return Efecto;
+        return effecto;
     }
 
 

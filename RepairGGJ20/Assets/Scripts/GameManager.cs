@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private GameObject[] manoJugador1;
-    private GameObject[] manoJugador2;
+    public GameObject[] manoJugador1;
+    public GameObject[] manoJugador2;
 
     private GameObject badGuys;
     private GameObject ecoAccion;
@@ -33,7 +33,21 @@ public class GameManager : MonoBehaviour
     private void robarCartas(GameObject[] mano, int n)
     {
         //TOMAR DEL MAZO
+        for (int i=0; mano.Length > i; i++)
+        {
+            if (mano[i] == null) { 
+            mano[i] = ecoAccion.GetComponent<Mazo>().robarCarta();
+            }
 
+        }
         //LLENAR LA MANO
+    }
+
+    private string usarCarta()
+    {
+        GameObject rt = manoJugador1[0];
+        manoJugador1[0] = null;
+        ecoAccion.GetComponent<Mazo>().descartarCarta(rt);
+        return rt.GetComponent<GestorCarta>().Accion;
     }
 }

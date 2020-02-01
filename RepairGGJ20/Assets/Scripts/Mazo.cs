@@ -15,8 +15,8 @@ public class Mazo : MonoBehaviour
     void Start()
     {
         cartas.MezclarCartas();
-        GameObject sep = new GameObject("----------");
-        disponibles.Add(sep);
+        //GameObject sep = new GameObject("----------");
+        //Instantiate(sep);
         foreach (var i in cartas)
         {
             GameObject c = new GameObject("__"+i.name);
@@ -25,12 +25,20 @@ public class Mazo : MonoBehaviour
             disponibles.Add(c);
         }
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public void descartarCarta(GameObject desca)
     {
-        Carta c = cartas[0];
-        Debug.Log(c.Name);
+        descarte.Add(desca);
+        desca.GetComponent<GestorCarta>().estadoActual = "DESCARTE";
+    }
+
+    public GameObject robarCarta()
+    {
+        GameObject rt = disponibles[0];
+        disponibles.Remove(rt);
+        rt.GetComponent<GestorCarta>().estadoActual = "MANO";
+        return rt;
+
     }
 
 }
