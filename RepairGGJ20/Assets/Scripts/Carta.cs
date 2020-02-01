@@ -24,7 +24,6 @@ public class Carta : ScriptableObject
     };
 
     // EFECTOS DE LA CARTA
-
     public efecto getEfectoCarta()
     {
         return Efecto;

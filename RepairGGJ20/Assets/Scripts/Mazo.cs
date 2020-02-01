@@ -3,23 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class MazoJugador : MonoBehaviour
+public class Mazo : MonoBehaviour
 {
 
-    public List<Carta> disponible;
-    public List<Carta> descarte;
-
+    public List<Carta> cartas;
+    public List<GameObject> disponibles;
+    public List<GameObject> descarte;
+    public GameObject ins;
 
     // Start is called before the first frame update
     void Start()
     {
-        disponible.MezclarCartas();
+        cartas.MezclarCartas();
+        GameObject sep = new GameObject("----------");
+        disponibles.Add(sep);
+        foreach (var i in cartas)
+        {
+            GameObject c = new GameObject("__"+i.name);
+            c.AddComponent<GestorCarta>(); //AÑADESAMIERDA!
+            c.GetComponent<GestorCarta>().definirCarta(i);
+            disponibles.Add(c);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        Carta c = disponible[0];
+        Carta c = cartas[0];
         Debug.Log(c.Name);
     }
 
