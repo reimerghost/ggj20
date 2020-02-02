@@ -10,7 +10,7 @@ public class Carta : ScriptableObject
 
     public Sprite arte;
     public efecto effecto;
-    public string accion;
+    //public string accion;
 
     public enum efecto
     {

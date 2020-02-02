@@ -18,7 +18,7 @@ public class GestorCarta : MonoBehaviour
     {
         c = card;
         nombre = c.name;
-        Accion = c.accion;
+        Accion = c.effecto.ToString();
         estadoActual = "MAZO";
     }
 
