@@ -19,9 +19,6 @@ public class GameManager : MonoBehaviour
 
     public GameObject lc;
 
-    private System.Random random = new System.Random();
-    private int tiempo;
-
     void Awake()
     {
         if (instance == null)
@@ -29,21 +26,23 @@ public class GameManager : MonoBehaviour
         else if (instance != this)
             Destroy(gameObject);
         DontDestroyOnLoad(gameObject);
+
+        lc = GameObject.Find("Level");
+        badGuys = GameObject.Find("BadGuys");
+        ecoAccion = GameObject.Find("EcoAccion");
     }
 
 
     void Start()
     {
-        random = new System.Random();
-        lc = GameObject.Find("Level");
-        badGuys = GameObject.Find("BadGuys");
-        ecoAccion = GameObject.Find("EcoAccion");
 
         //badGuys.GetComponent
 
         manoJugador1 = new GameObject[3];
         manoJugador2 = new GameObject[3];
-        
+
+        robarCartas(manoJugador1,1);
+        robarCartas(manoJugador2,1);
 
         //tiempo = random.Next(10, 20);
         //InvokeRepeating("usarCartaDesastre", 5.0f, 0.3f);
