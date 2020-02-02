@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Reimer\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Reimer\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_RepairGGJ20.-504551264.00" t="ExcludeRecursive" />
+    <e p="W:\Juegos Unity\GGJ20\reparar\RepairGGJ20" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="AirConsole" t="Include">
+          <e p="examples" t="Include">
+            <e p="basic" t="Include">
+              <e p="ExampleBasicLogic.cs" t="Include" />
+            </e>
+            <e p="gamestates" t="Include">
+              <e p="GamestateExampleLogic.cs" t="Include" />
+            </e>
+            <e p="gyroscope" t="Include">
+              <e p="GyroscopeExampleLogic.cs" t="Include" />
+            </e>
+            <e p="platformer" t="Include">
+              <e p="PlatformerExampleLogic.cs" t="Include" />
+              <e p="Player_Platformer.cs" t="Include" />
+            </e>
+            <e p="pong" t="Include">
+              <e p="ExamplePongLogic.cs" t="Include" />
+              <e p="scripts" t="Include">
+                <e p="Racket.cs" t="Include" />
+              </e>
+            </e>
+            <e p="swipe" t="Include">
+              <e p="Player_Swipe.cs" t="Include" />
+            </e>
+          </e>
+          <e p="extras" t="Include">
+            <e p="HighScoreHelper.cs" t="Include" />
+          </e>
+          <e p="plugins" t="Include">
+            <e p="Editor" t="Include">
+              <e p="UnityWebViewPostprocessBuild.cs" t="Include" />
+            </e>
+            <e p="Newtonsoft.Json" t="Include">
+              <e p="Bson" t="Include">
+                <e p="BsonBinaryType.cs" t="Include" />
+                <e p="BsonBinaryWriter.cs" t="Include" />
+                <e p="BsonObjectId.cs" t="Include" />
+                <e p="BsonReader.cs" t="Include" />
+                <e p="BsonToken.cs" t="Include" />
+                <e p="BsonType.cs" t="Include" />
+                <e p="BsonWriter.cs" t="Include" />
+              </e>
+              <e p="ConstructorHandling.cs" t="Include" />
+              <e p="Converters" t="Include">
+                <e p="BinaryConverter.cs" t="Include" />
+                <e p="BsonObjectIdConverter.cs" t="Include" />
+                <e p="CustomCreationConverter.cs" t="Include" />
+                <e p="DataSetConverter.cs" t="Include" />
+                <e p="DataTableConverter.cs" t="Include" />
+                <e p="DateTimeConverterBase.cs" t="Include" />
+                <e p="EntityKeyMemberConverter.cs" t="Include" />
+                <e p="ExpandoObjectConverter.cs" t="Include" />
+                <e p="IsoDateTimeConverter.cs" t="Include" />
+                <e p="JavaScriptDateTimeConverter.cs" t="Include" />
+                <e p="JsonDateTimeSerializationMode.cs" t="Include" />
+                <e p="KeyValuePairConverter.cs" t="Include" />
+                <e p="RegexConverter.cs" t="Include" />
+                <e p="StringEnumConverter.cs" t="Include" />
+                <e p="XmlNodeConverter.cs" t="Include" />
+              </e>
+              <e p="DefaultValueHandling.cs" t="Include" />
+              <e p="FormatterAssemblyStyle.cs" t="Include" />
+              <e p="IJsonLineInfo.cs" t="Include" />
+              <e p="JsonArrayAttribute.cs" t="Include" />
+              <e p="JsonConstructorAttribute.cs" t="Include" />
+              <e p="JsonContainerAttribute.cs" t="Include" />
+              <e p="JsonConvert.cs" t="Include" />
+              <e p="JsonConverter.cs" t="Include" />
+              <e p="JsonConverterAttribute.cs" t="Include" />
+              <e p="JsonConverterCollection.cs" t="Include" />
+              <e p="JsonIgnoreAttribute.cs" t="Include" />
+              <e p="JsonObjectAttribute.cs" t="Include" />
+              <e p="JsonPropertyAttribute.cs" t="Include" />
+              <e p="JsonReader.cs" t="Include" />
+              <e p="JsonReaderException.cs" t="Include" />
+              <e p="JsonSerializationException.cs" t="Include" />
+              <e p="JsonSerializer.cs" t="Include" />
+              <e p="JsonSerializerSettings.cs" t="Include" />
+              <e p="JsonTextReader.cs" t="Include" />
+              <e p="JsonTextWriter.cs" t="Include" />
+              <e p="JsonToken.cs" t="Include" />
+              <e p="JsonValidatingReader.cs" t="Include" />
+              <e p="JsonWriter.cs" t="Include" />
+              <e p="JsonWriterException.cs" t="Include" />
+              <e p="Linq" t="Include">
+                <e p="Extensions.cs" t="Include" />
+                <e p="IJEnumerable.cs" t="Include" />
+                <e p="JArray.cs" t="Include" />
+                <e p="JConstructor.cs" t="Include" />
+                <e p="JContainer.cs" t="Include" />
+                <e p="JEnumerable.cs" t="Include" />
+                <e p="JObject.cs" t="Include" />
+                <e p="JPath.cs" t="Include" />
+                <e p="JProperty.cs" t="Include" />
+                <e p="JPropertyDescriptor.cs" t="Include" />
+                <e p="JRaw.cs" t="Include" />
+                <e p="JToken.cs" t="Include" />
+                <e p="JTokenEqualityComparer.cs" t="Include" />
+                <e p="JTokenReader.cs" t="Include" />
+                <e p="JTokenType.cs" t="Include" />
+                <e p="JTokenWriter.cs" t="Include" />
+                <e p="JValue.cs" t="Include" />
+              </e>
+              <e p="MemberSerialization.cs" t="Include" />
+              <e p="MissingMemberHandling.cs" t="Include" />
+              <e p="NullValueHandling.cs" t="Include" />
+              <e p="ObjectCreationHandling.cs" t="Include" />
+              <e p="PreserveReferencesHandling.cs" t="Include" />
+              <e p="ReferenceLoopHandling.cs" t="Include" />
+              <e p="Required.cs" t="Include" />
+              <e p="Schema" t="Include">
+                <e p="Extensions.cs" t="Include" />
+                <e p="JsonSchema.cs" t="Include" />
+                <e p="JsonSchemaBuilder.cs" t="Include" />
+                <e p="JsonSchemaConstants.cs" t="Include" />
+                <e p="JsonSchemaException.cs" t="Include" />
+                <e p="JsonSchemaGenerator.cs" t="Include" />
+                <e p="JsonSchemaModel.cs" t="Include" />
+                <e p="JsonSchemaModelBuilder.cs" t="Include" />
+                <e p="JsonSchemaNode.cs" t="Include" />
+                <e p="JsonSchemaNodeCollection.cs" t="Include" />
+                <e p="JsonSchemaResolver.cs" t="Include" />
+                <e p="JsonSchemaType.cs" t="Include" />
+                <e p="JsonSchemaWriter.cs" t="Include" />
+                <e p="UndefinedSchemaIdHandling.cs" t="Include" />
+                <e p="ValidationEventArgs.cs" t="Include" />
+                <e p="ValidationEventHandler.cs" t="Include" />
+              </e>
+              <e p="Serialization" t="Include">
+                <e p="CachedAttributeGetter.cs" t="Include" />
+                <e p="CamelCasePropertyNamesContractResolver.cs" t="Include" />
+                <e p="DefaultContractResolver.cs" t="Include" />
+                <e p="DefaultReferenceResolver.cs" t="Include" />
+                <e p="DefaultSerializationBinder.cs" t="Include" />
+                <e p="DynamicValueProvider.cs" t="Include" />
+                <e p="ErrorContext.cs" t="Include" />
+                <e p="ErrorEventArgs.cs" t="Include" />
+                <e p="IContractResolver.cs" t="Include" />
+                <e p="IReferenceResolver.cs" t="Include" />
+                <e p="IValueProvider.cs" t="Include" />
+                <e p="JsonArrayContract.cs" t="Include" />
+                <e p="JsonContract.cs" t="Include" />
+                <e p="JsonDictionaryContract.cs" t="Include" />
+                <e p="JsonDynamicContract.cs" t="Include" />
+                <e p="JsonFormatterConverter.cs" t="Include" />
+                <e p="JsonISerializableContract.cs" t="Include" />
+                <e p="JsonLinqContract.cs" t="Include" />
+                <e p="JsonObjectContract.cs" t="Include" />
+                <e p="JsonPrimitiveContract.cs" t="Include" />
+                <e p="JsonProperty.cs" t="Include" />
+                <e p="JsonPropertyCollection.cs" t="Include" />
+                <e p="JsonSerializerInternalBase.cs" t="Include" />
+                <e p="JsonSerializerInternalReader.cs" t="Include" />
+                <e p="JsonSerializerInternalWriter.cs" t="Include" />
+                <e p="JsonSerializerProxy.cs" t="Include" />
+                <e p="JsonStringContract.cs" t="Include" />
+                <e p="JsonTypeReflector.cs" t="Include" />
+                <e p="LateBoundMetadataTypeAttribute.cs" t="Include" />
+                <e p="ObjectConstructor.cs" t="Include" />
+                <e p="OnErrorAttribute.cs" t="Include" />
+                <e p="ReflectionValueProvider.cs" t="Include" />
+              </e>
+              <e p="SerializationBinder.cs" t="Include" />
+              <e p="StreamingContext.cs" t="Include" />
+              <e p="TypeNameHandling.cs" t="Include" />
+              <e p="Utilities" t="Include">
+                <e p="Base64Encoder.cs" t="Include" />
+                <e p="BidirectionalDictionary.cs" t="Include" />
+                <e p="CollectionUtils.cs" t="Include" />
+                <e p="CollectionWrapper.cs" t="Include" />
+                <e p="ConvertUtils.cs" t="Include" />
+                <e p="DateTimeUtils.cs" t="Include" />
+                <e p="DictionaryWrapper.cs" t="Include" />
+                <e p="DynamicProxy.cs" t="Include" />
+                <e p="DynamicProxyMetaObject.cs" t="Include" />
+                <e p="DynamicReflectionDelegateFactory.cs" t="Include" />
+                <e p="DynamicUtils.cs" t="Include" />
+                <e p="DynamicWrapper.cs" t="Include" />
+                <e p="EnumUtils.cs" t="Include" />
+                <e p="EnumValue.cs" t="Include" />
+                <e p="EnumValues.cs" t="Include" />
+                <e p="ILGeneratorExtensions.cs" t="Include" />
+                <e p="JavaScriptUtils.cs" t="Include" />
+                <e p="LateBoundReflectionDelegateFactory.cs" t="Include" />
+                <e p="LinqBridge.cs" t="Include" />
+                <e p="ListWrapper.cs" t="Include" />
+                <e p="MathUtils.cs" t="Include" />
+                <e p="MethodCall.cs" t="Include" />
+                <e p="MiscellaneousUtils.cs" t="Include" />
+                <e p="ReflectionDelegateFactory.cs" t="Include" />
+                <e p="ReflectionUtils.cs" t="Include" />
+                <e p="StringBuffer.cs" t="Include" />
+                <e p="StringUtils.cs" t="Include" />
+                <e p="ThreadSafeStore.cs" t="Include" />
+                <e p="ValidationUtils.cs" t="Include" />
+              </e>
+            </e>
+            <e p="WebViewObject.cs" t="Include" />
+          </e>
+          <e p="README.txt" t="Include" />
+          <e p="scripts" t="Include">
+            <e p="AirConsole.cs" t="Include" />
+            <e p="DebugLevel.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="Extentions.cs" t="Include" />
+              <e p="Inspector.cs" t="Include" />
+              <e p="PlayMode.cs" t="Include" />
+              <e p="PostBuildProcess.cs" t="Include" />
+              <e p="SettingWindow.cs" t="Include" />
+              <e p="WebListener.cs" t="Include" />
+            </e>
+            <e p="Settings.cs" t="Include" />
+            <e p="WebsocketListener.cs" t="Include" />
+          </e>
+        </e>
+        <e p="LowPolyWater_Pack" t="Include">
+          <e p="LowPoly Island" t="Include">
+            <e p="Credits.txt" t="Include" />
+          </e>
+          <e p="scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="GeneratePlane.cs" t="Include" />
+            </e>
+            <e p="LowPolyWater.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="WaterShaded.shader" t="Include" />
+          </e>
+        </e>
+        <e p="scripts" t="Include">
+          <e p="Carta.cs" t="Include" />
+          <e p="Ecosistema.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="GestorCarta.cs" t="Include" />
+          <e p="Mazo.cs" t="Include" />
+          <e p="Miscelaneous" t="Include">
+            <e p="Ambiente.cs" t="Include" />
+            <e p="Globals.cs" t="Include" />
+            <e p="LevelController.cs" t="Include" />
+            <e p="TileRandomizer.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="RepairGGJ20.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

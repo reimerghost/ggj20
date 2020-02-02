@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be29221e4f38ecc4284d636340813277, type: 3}
   m_Name: Reforestar
   m_EditorClassIdentifier: 
-  Name: Reforestar
-  Description: 
-  Artwork: {fileID: 0}
-  Efecto: 1
+  nombre: 
+  descripcion: 
+  arte: {fileID: 0}
+  effecto: 1
+  accion: 
