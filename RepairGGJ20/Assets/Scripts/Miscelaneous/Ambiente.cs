@@ -26,6 +26,7 @@ public class Ambiente : MonoBehaviour
         if (remaining_Lives >= 1)
         {
             remaining_Lives--;
+            isDead = remaining_Lives == 0;
             ChangeVisual();
         }
     }

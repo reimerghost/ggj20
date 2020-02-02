@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public static GameManager instance = null;
 
     public GameObject[] manoJugador1;
     public GameObject[] manoJugador2;
@@ -12,10 +15,26 @@ public class GameManager : MonoBehaviour
     private GameObject badGuys;
     private GameObject ecoAccion;
 
+    private GameObject DesastreActual;
+
     public GameObject lc;
+
+    private System.Random random = new System.Random();
+    private int tiempo;
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+        DontDestroyOnLoad(gameObject);
+    }
+
 
     void Start()
     {
+        random = new System.Random();
         lc = GameObject.Find("Level");
         badGuys = GameObject.Find("BadGuys");
         ecoAccion = GameObject.Find("EcoAccion");
@@ -24,14 +43,10 @@ public class GameManager : MonoBehaviour
 
         manoJugador1 = new GameObject[3];
         manoJugador2 = new GameObject[3];
-        robarCartas(manoJugador1, 3);
-        robarCartas(manoJugador2, 3);
-    }
+        
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        //tiempo = random.Next(10, 20);
+        //InvokeRepeating("usarCartaDesastre", 5.0f, 0.3f);
     }
 
     private void robarCartas(GameObject[] mano, int n)
@@ -48,20 +63,41 @@ public class GameManager : MonoBehaviour
         //LLENAR LA MANO
     }
 
-    private void usarCartaPlayer(int pos)
+    public void usarCartaPlayer(int pos, int player)
     {
-        GameObject enUso = manoJugador1[pos];
-        manoJugador1[pos] = null;
+        GameObject enUso;
+        if (player == 1)
+        {
+            enUso = manoJugador1[pos];
+            manoJugador1[pos] = ecoAccion.GetComponent<Mazo>().robarCarta();
+        }
+        else
+        {
+            enUso = manoJugador2[pos];
+            manoJugador2[pos] = ecoAccion.GetComponent<Mazo>().robarCarta();
+        }
+        if (enUso != null) { 
         ecoAccion.GetComponent<Mazo>().descartarCarta(enUso);
+        }
         string act = enUso.GetComponent<GestorCarta>().Accion;
-
+        if (ecoAccion.GetComponent<Mazo>().disponibles.Count <= 0)
+        {
+            ecoAccion.GetComponent<Mazo>().Remezclar();
+        }
     }
 
-    private void usarCartaDesastre()
+    public string showDesastreActual()
     {
-        GameObject enUso = badGuys.GetComponent<Mazo>().disponibles[0];
-        badGuys.GetComponent<Mazo>().descartarCarta(enUso);
-        string act = enUso.GetComponent<GestorCarta>().Accion;
+        return DesastreActual.GetComponent<GestorCarta>().nombre;
+    }
+
+    public void usarCartaDesastre()
+    {
+        DesastreActual = badGuys.GetComponent<Mazo>().disponibles[0];
+        if (DesastreActual != null) {
+            badGuys.GetComponent<Mazo>().descartarCarta(DesastreActual);
+        }
+        string act = DesastreActual.GetComponent<GestorCarta>().Accion;
         switch (act)
         {
             case "AGUA":
@@ -104,6 +140,11 @@ public class GameManager : MonoBehaviour
                     lc.GetComponent<LevelController>().Kill("Forest");
                     break;
                 }
+        }
+        Debug.Log(showDesastreActual());
+        if (badGuys.GetComponent<Mazo>().disponibles.Count <= 0)
+        {
+            badGuys.GetComponent<Mazo>().Remezclar();
         }
     }
 }

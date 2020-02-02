@@ -14,21 +14,38 @@ public class Mazo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Mezclar();
+    }
+
+    public void Mezclar()
+    {
         cartas.MezclarCartas();
         //GameObject sep = new GameObject("----------");
         //Instantiate(sep);
         foreach (var i in cartas)
         {
-            GameObject c = new GameObject("__"+i.name);
+            GameObject c = new GameObject("__" + i.name);
             c.AddComponent<GestorCarta>(); //AÑADESAMIERDA!
             c.GetComponent<GestorCarta>().definirCarta(i);
             disponibles.Add(c);
         }
+        descarte.Clear();
     }
-    
+
+    public void Remezclar()
+    {
+        descarte.MezclarCartas();
+        foreach (var el in descarte)
+        {
+            disponibles.Add(el);
+        }
+        descarte.Clear();
+    }
+
     public void descartarCarta(GameObject desca)
     {
         descarte.Add(desca);
+        disponibles.Remove(desca);
         desca.GetComponent<GestorCarta>().estadoActual = "DESCARTE";
     }
 

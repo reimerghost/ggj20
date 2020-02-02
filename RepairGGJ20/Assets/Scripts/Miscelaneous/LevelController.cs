@@ -27,24 +27,23 @@ public class LevelController : MonoBehaviour
 
     public void Hurt(string tipo_ambiente)
     {
-        ChooseAmbiente(tipo_ambiente)?.Hurt();
+        List<Ambiente> lista = null;
+        ChooseAmbiente(tipo_ambiente, out lista)?.Hurt();
+        if (!CheckLimit(lista)) { Debug.Log("GAME OVER"); }
     }
 
     public void Kill(string tipo_ambiente)
     {
-        ChooseAmbiente(tipo_ambiente)?.Kill();
+        List<Ambiente> lista = null;
+        ChooseAmbiente(tipo_ambiente, out lista)?.Kill();
+        if (!CheckLimit(lista)) { Debug.Log("GAME OVER"); }
     }
 
-    Ambiente ChooseAmbiente(string tipo_ambiente)
+    Ambiente ChooseAmbiente(string tipo_ambiente, out List<Ambiente> lista)
     {
         List<Ambiente> cual_lista = GetLista(tipo_ambiente);
-        if (!CheckLimit(cual_lista))
-        {
-            //TODO Die
-            Debug.Log("DIE");
-            return null;
-        }
         List<Ambiente> can_be_damaged = GetDamageable(cual_lista);
+        lista = cual_lista;
         return ChooseWhichToDamage(can_be_damaged);
     }
 
